@@ -1,0 +1,83 @@
+html, body{
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-family: fantasy;
+}
+
+h1 {
+	text-align: center;
+}
+
+#contenedorPadre {
+    width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.tablero{
+	margin-top:5px;
+}
+
+.filas, .vacio, .relleno{
+	display: flex;
+	justify-content: center;
+	margin: 2px;
+}
+
+.vacio, .relleno{
+	font-size: 40px;
+	border: 1px solid;
+	width: 56px;
+	height: 51px;
+	border-radius: 12px;
+}
+
+.teclado{
+	display: flex;
+	flex-wrap: wrap;
+	width: 612px;
+	margin: 0 auto;
+	text-align:center;
+	margin-top: 5px;
+}
+
+.tecladoArriba, .tecladoMedio, .tecladoAbajo{
+	display: flex;
+	width: 100%;
+	justify-content:center;
+	margin: 2px;
+}
+
+button{
+	font-size: 20px;
+	width: 10%;
+	height: 51px;
+	border-radius: 12px;
+	margin: 2px;
+	cursor: pointer;
+}
+
+.ENVIAR, .BACK{
+	width: 15%;
+}
+
+.relleno-verde {
+    /* Estilos para cuadrados con la letra correcta */
+    background-color: green;
+}
+
+.relleno-amarillo {
+    /* Estilos para cuadrados con letra correcta en posición incorrecta */
+    background-color: yellow;
+}
+
+.relleno-gris {
+    /* Estilos para cuadrados con letra incorrecta */
+    background-color: gray;
+}
